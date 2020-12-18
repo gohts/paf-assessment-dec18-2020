@@ -217,6 +217,7 @@ app.post('/api/share',
 )
 
 // load static resources
+app.use(express.static(__dirname + '/frontend'));
 
 // start the application
 const p0 = (async () => {
